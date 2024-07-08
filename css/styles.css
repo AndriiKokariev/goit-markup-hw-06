@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -21,7 +21,7 @@ a {
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
-}
+} */
 /* ------------------  ------------------ */
 /* ------------------ HEADER ------------------ */
 .header {
