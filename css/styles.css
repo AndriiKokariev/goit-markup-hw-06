@@ -6,10 +6,6 @@ body {
 
 ul {
   list-style-type: none;
-}
-
-ul,
-ol {
   margin: 0;
   padding-left: 0;
 }
@@ -29,6 +25,13 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 /* ------------------  ------------------ */
 /* ------------------ HEADER ------------------ */
