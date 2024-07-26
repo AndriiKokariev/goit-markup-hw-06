@@ -101,6 +101,9 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
@@ -127,6 +130,9 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-info-link:hover,
@@ -138,6 +144,14 @@ img {
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-background.jpg);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-container {
@@ -168,6 +182,9 @@ img {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -191,6 +208,11 @@ img {
 
 .features-list-item {
   width: calc((100% - 72px) / 4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .features-list-subtitle {
@@ -199,7 +221,6 @@ img {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
 }
 
 .features-list-text {
@@ -207,6 +228,20 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.features-list-icon-box {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+}
+
+.features-list-icon {
+  width: 64px;
+  height: 64px;
+  margin: 24px 100px;
 }
 /* ------------------  ------------------ */
 /* ------------------ TEAM ------------------ */
@@ -234,9 +269,11 @@ img {
 }
 
 .team-list-item {
-  background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .team-list-img {
@@ -249,7 +286,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -264,6 +300,42 @@ img {
 
 .team-list-worker {
   padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+.team-icons-list-item {
+}
+.team-icons-list-link {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icons-list-link:hover,
+.team-icons-list-link:focus {
+  background-color: #404bbf;
+}
+
+.team-icons-list-icon {
+  fill: #f4f4fd;
 }
 
 /* ------------------  ------------------ */
