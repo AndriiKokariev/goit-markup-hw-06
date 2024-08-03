@@ -544,3 +544,70 @@ img {
   width: 208px;
   height: 80px;
 }
+
+.footer-email-box {
+  width: 453px;
+  height: 80px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-email-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-email-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding-left: 16px;
+}
+
+.footer-email-input::placeholder {
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.footer-email-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-button-icon {
+  fill: #fff;
+}
