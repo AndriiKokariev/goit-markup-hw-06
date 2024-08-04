@@ -538,27 +538,31 @@
               </svg>
             </div>
           </div>
-          <label class="modal-label" for="input-comment">Comment</label
-          ><textarea
-            class="modal-text-area"
-            name="user-coment"
-            placeholder="Text input"
-            id="input-comment"
-          ></textarea>
+          <div class="modal-textarea-box">
+            <label class="modal-label" for="user-comment">Comment</label
+            ><textarea
+              class="modal-text-area"
+              name="user-coment"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
 
-          <input
-            class="modal-check visually-hidden"
-            type="checkbox"
-            name="privacy"
-            id="privacy-checkbox"
-            value="true"
-          /><label for="privacy-checkbox" class="modal-label modal-check-label"
-            ><span>
-              <svg class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-Vector"></use></svg></span
-            >I accept the terms and conditions of the
-            <a href="" class="check-terms-link"> Privacy Policy</a></label
-          >
+          <div class="modal-check-box">
+            <input
+              class="modal-check visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            /><label for="user-privacy" class="modal-label modal-check-label"
+              ><span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="check-terms-link"> Privacy Policy</a></label
+            >
+          </div>
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
